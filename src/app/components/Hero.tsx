@@ -5,30 +5,28 @@ import WaitlistForm from './WaitlistForm';
 
 export default function Hero() {
   return (
-    <div className="min-h-screen flex items-center justify-center px-4 py-12">
+    <div className="min-h-screen flex items-start md:items-center justify-center px-4 pt-16 md:pt-12 pb-12">
       <div className="max-w-4xl w-full text-center">
         <div className="animate-scale-in">
           <Logo />
         </div>
         
-        <h1 className="text-3xl md:text-7xl font-bold text-white mb-6 animate-slide-up-delayed-1 leading-tight">
-          <span className="bg-gradient-to-r from-repple-purple to-repple-violet bg-clip-text text-transparent">
-            The Gym just became
-            <br />
-            a Game.
-          </span>
+        <h1 className="text-3xl md:text-7xl font-bold mb-6 animate-slide-up-delayed-1 leading-tight watery-gradient-text">
+          The Gym just became
+          <br />
+          a Game.
         </h1>
         
-        <p className="text-lg md:text-2xl text-gray-300 mb-10 animate-slide-up-delayed-2 max-w-2xl mx-auto">
+        <p className="text-lg md:text-2xl text-gray-700 mb-10 animate-slide-up-delayed-2 max-w-2xl mx-auto">
           Compete with friends and level up your fitness journey.
         </p>
         
         <div className="animate-slide-up-delayed-3">
           <WaitlistForm />
-          <p className="mt-3 text-sm text-white">
+          <p className="mt-3 text-sm text-gray-600">
             Join the waitlist for early access
           </p>
-          <p className="mt-2 text-sm text-white">
+          <p className="mt-2 text-sm text-gray-600">
             Purdue students get priority access
           </p>
         </div>
