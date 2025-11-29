@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { isValidEmail, isPurdueEmail } from '@/app/lib/email-validator';
-import { addEmailToWaitlist, emailExists } from '@/app/lib/json-storage';
+import { addEmailToMailchimp } from '@/app/lib/mailchimp';
 import { WaitlistResponse } from '@/types/waitlist';
 
 export async function POST(request: NextRequest) {
@@ -25,23 +25,21 @@ export async function POST(request: NextRequest) {
       return NextResponse.json(response, { status: 400 });
     }
 
-    // Check if email already exists
-    const exists = await emailExists(email);
-    if (exists) {
-      const response: WaitlistResponse = {
-        success: false,
-        error: 'This email is already on the waitlist',
-      };
-      return NextResponse.json(response, { status: 409 });
-    }
-
     // Check if it's a Purdue email
     const isPurdue = isPurdueEmail(email);
 
-    // Add to waitlist
-    const success = await addEmailToWaitlist(email, isPurdue);
+    // Add to Mailchimp
+    const result = await addEmailToMailchimp(email, isPurdue);
 
-    if (!success) {
+    if (!result.success) {
+      if (result.error === 'EMAIL_EXISTS') {
+        const response: WaitlistResponse = {
+          success: false,
+          error: 'This email is already on the waitlist',
+        };
+        return NextResponse.json(response, { status: 409 });
+      }
+      
       const response: WaitlistResponse = {
         success: false,
         error: 'Failed to add email to waitlist. Please try again.',
