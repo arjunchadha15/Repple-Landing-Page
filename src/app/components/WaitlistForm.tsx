@@ -59,7 +59,7 @@ export default function WaitlistForm() {
             <button
               type="submit"
               disabled={isLoading}
-              className="px-6 py-4 bg-gradient-to-r from-repple-purple to-repple-violet text-white font-semibold rounded-2xl hover:shadow-purple-glow-lg transition-all duration-300 hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100 whitespace-nowrap"
+              className="px-6 py-4 watery-gradient-button text-white font-semibold rounded-2xl hover:shadow-purple-glow-lg transition-all duration-300 hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100 whitespace-nowrap"
             >
               {isLoading ? 'Joining...' : 'Join Waitlist'}
             </button>

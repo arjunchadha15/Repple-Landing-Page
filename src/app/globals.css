@@ -47,3 +47,17 @@
   background-clip: text;
   animation: waterFlow 6s ease-in-out infinite;
 }
+
+.watery-gradient-button {
+  background: linear-gradient(
+    45deg,
+    #7F3DFF 0%,
+    #8A2BE2 20%,
+    #9370DB 40%,
+    #BA55D3 60%,
+    #8A2BE2 80%,
+    #7F3DFF 100%
+  );
+  background-size: 200% 200%;
+  animation: waterFlow 6s ease-in-out infinite;
+}
