@@ -1,7 +1,7 @@
 'use client';
 
 import Logo from './Logo';
-import WaitlistForm from './WaitlistForm';
+import DownloadButton from './DownloadButton';
 
 export default function Hero() {
   return (
@@ -22,12 +22,9 @@ export default function Hero() {
         </p>
         
         <div className="animate-slide-up-delayed-3">
-          <WaitlistForm />
+          <DownloadButton />
           <p className="mt-3 text-sm text-gray-600">
-            Join the waitlist for early access
-          </p>
-          <p className="mt-2 text-sm text-gray-600">
-            Purdue students get priority access
+            Available now on iPhone via TestFlight
           </p>
         </div>
       </div>
