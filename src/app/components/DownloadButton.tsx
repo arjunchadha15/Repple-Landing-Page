@@ -18,7 +18,7 @@ export default function DownloadButton() {
         href="https://testflight.apple.com/join/eHKnAmSY"
         target="_blank"
         rel="noopener noreferrer"
-        className="inline-block w-full sm:w-auto px-8 py-5 watery-gradient-button text-white font-semibold rounded-2xl hover:shadow-purple-glow-lg transition-all duration-300 hover:scale-105 text-lg"
+        className="inline-block w-full sm:w-auto px-8 py-5 watery-gradient-button text-white font-semibold rounded-2xl transition-all duration-300 hover:scale-105 text-lg shadow-lg hover:shadow-2xl shadow-gray-700/40 hover:shadow-gray-900/50 active:shadow-md active:translate-y-1"
       >
         {isIPhone ? 'Download Beta for iPhone' : 'Download Beta'}
       </a>

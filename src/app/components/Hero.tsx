@@ -11,7 +11,7 @@ export default function Hero() {
           <Logo />
         </div>
         
-        <h1 className="text-5xl md:text-8xl font-bold mb-6 animate-slide-up-delayed-1 watery-gradient-text">
+  <h1 className="text-5xl md:text-8xl font-bold mb-6 animate-slide-up-delayed-1 watery-gradient-text">
           Repple
         </h1>
         
