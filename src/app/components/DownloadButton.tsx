@@ -20,7 +20,7 @@ export default function DownloadButton() {
         rel="noopener noreferrer"
         className="inline-block w-full sm:w-auto px-8 py-5 watery-gradient-button text-white font-semibold rounded-2xl hover:shadow-purple-glow-lg transition-all duration-300 hover:scale-105 text-lg"
       >
-        {isIPhone ? '📱 Download Beta for iPhone' : '📱 Download Beta'}
+        {isIPhone ? 'Download Beta for iPhone' : 'Download Beta'}
       </a>
       
       {isIPhone && (
