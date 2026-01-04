@@ -1,7 +1,7 @@
 'use client';
 
 import Logo from './Logo';
-import DownloadButton from './DownloadButton';
+import WaitlistForm from './WaitlistForm';
 
 export default function Hero() {
   return (
@@ -11,7 +11,7 @@ export default function Hero() {
           <Logo />
         </div>
         
-  <h1 className="text-5xl md:text-8xl font-bold mb-6 animate-slide-up-delayed-1 watery-gradient-text">
+        <h1 className="text-5xl md:text-8xl font-bold mb-6 animate-slide-up-delayed-1 watery-gradient-text">
           Repple
         </h1>
         
@@ -26,10 +26,7 @@ export default function Hero() {
         </p>
         
         <div className="animate-slide-up-delayed-3">
-          <DownloadButton />
-          <p className="mt-3 text-sm text-gray-600">
-            Available now on iPhone via TestFlight
-          </p>
+          <WaitlistForm />
         </div>
       </div>
     </div>
