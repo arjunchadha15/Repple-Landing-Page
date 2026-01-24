@@ -11,19 +11,11 @@ export default function Hero() {
           <Logo />
         </div>
         
-        <h1 className="text-5xl md:text-8xl font-bold mb-6 animate-slide-up-delayed-1 watery-gradient-text">
-          Repple
-        </h1>
-        
-        <h2 className="text-3xl md:text-5xl font-bold mb-6 animate-slide-up-delayed-2 leading-tight text-black">
+        <h1 className="text-3xl md:text-7xl font-bold mb-10 animate-slide-up-delayed-1 leading-tight watery-gradient-text">
           The Gym just became
           <br />
           a Game.
-        </h2>
-        
-        <p className="text-lg md:text-2xl text-gray-700 mb-10 animate-slide-up-delayed-2 max-w-2xl mx-auto">
-          Compete with friends and level up your fitness journey.
-        </p>
+        </h1>
         
         <div className="animate-slide-up-delayed-3">
           <WaitlistForm />

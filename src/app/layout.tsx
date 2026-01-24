@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import { Analytics } from '@vercel/analytics/next';
+import Script from 'next/script';
 import './globals.css';
 
 const inter = Inter({ subsets: ['latin'] });
@@ -21,6 +22,15 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <Script
+          type="text/javascript"
+          src="https://app.viral-loops.com/widgetsV2/core/loader.js"
+          data-campaign-id="a9qJGkxniH1oRo5ewFwddDty2uE"
+          id="viral-loops-loader"
+          strategy="beforeInteractive"
+        />
+      </head>
       <body className={inter.className}>
         {children}
         <Analytics />
