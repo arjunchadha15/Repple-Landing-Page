@@ -11,6 +11,10 @@ export default function Hero() {
           <Logo />
         </div>
         
+        <h2 className="text-5xl md:text-8xl font-bold mb-6 animate-slide-up leading-tight watery-gradient-text">
+          Repple
+        </h2>
+        
         <h1 className="text-3xl md:text-7xl font-bold mb-10 animate-slide-up-delayed-1 leading-tight watery-gradient-text">
           The Gym just became
           <br />
