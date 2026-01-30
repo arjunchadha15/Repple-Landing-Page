@@ -1,0 +1,14 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "3DZUV94U4D.Arjun.Repple",
+        "paths": ["/join/*", "/invite/*", "/team/*", "/profile/*"]
+      }
+    ]
+  },
+  "webcredentials": {
+    "apps": ["3DZUV94U4D.Arjun.Repple"]
+  }
+}
