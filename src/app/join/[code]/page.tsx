@@ -17,20 +17,20 @@ export async function generateMetadata({ params }: JoinPageProps): Promise<Metad
       description: 'You\'ve been invited to join a team on Repple. Compete with friends in fitness challenges!',
       images: [
         {
-          url: 'https://repple.app/og-image.png',
+          url: 'https://reppleapp.com/og-image.png',
           width: 1024,
           height: 1024,
           alt: 'Repple - Turn the Gym Into a Game',
         },
       ],
-      url: `https://repple.app/join/${code}`,
+      url: `https://reppleapp.com/join/${code}`,
       type: 'website',
     },
     twitter: {
       card: 'summary_large_image',
       title: 'Join my team on Repple!',
       description: 'You\'ve been invited to join a team on Repple. Compete with friends in fitness challenges!',
-      images: ['https://repple.app/og-image.png'],
+      images: ['https://reppleapp.com/og-image.png'],
     },
   };
 }
