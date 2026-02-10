@@ -12,6 +12,11 @@ export const metadata: Metadata = {
   authors: [{ name: 'Repple' }],
   viewport: 'width=device-width, initial-scale=1',
   themeColor: '#7F3DFF',
+  icons: {
+    icon: '/Repple_Monkey_Vector.png',
+    shortcut: '/Repple_Monkey_Vector.png',
+    apple: '/Repple_Monkey_Vector.png',
+  },
 };
 
 export default function RootLayout({
