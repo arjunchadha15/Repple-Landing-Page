@@ -23,12 +23,6 @@ export default function Hero() {
         
         <div className="animate-slide-up-delayed-3">
           <WaitlistForm />
-          <p className="mt-3 text-sm text-gray-600">
-            Join the waitlist for early access
-          </p>
-          <p className="mt-2 text-sm text-gray-600">
-            Purdue students get priority access
-          </p>
         </div>
       </div>
     </div>

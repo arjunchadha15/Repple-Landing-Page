@@ -6,7 +6,7 @@ import { WaitlistResponse } from '@/types/waitlist';
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
-    const { email } = body;
+    const { email, firstName, lastName } = body;
 
     // Validate email format
     if (!email || typeof email !== 'string') {
@@ -28,8 +28,8 @@ export async function POST(request: NextRequest) {
     // Check if it's a Purdue email
     const isPurdue = isPurdueEmail(email);
 
-    // Add to Mailchimp
-    const result = await addEmailToMailchimp(email, isPurdue);
+    // Add to Mailchimp with first and last name
+    const result = await addEmailToMailchimp(email, isPurdue, firstName, lastName);
 
     if (!result.success) {
       if (result.error === 'EMAIL_EXISTS') {

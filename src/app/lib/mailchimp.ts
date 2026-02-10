@@ -5,17 +5,32 @@ mailchimp.setConfig({
   server: process.env.MAILCHIMP_SERVER_PREFIX,
 });
 
-export async function addEmailToMailchimp(email: string, isPurdue: boolean = false) {
+export async function addEmailToMailchimp(
+  email: string, 
+  isPurdue: boolean = false,
+  firstName?: string,
+  lastName?: string
+) {
   try {
+    const mergeFields: any = {
+      SOURCE: 'Repple Waitlist',
+    };
+
+    // Add first and last name to merge fields if provided
+    if (firstName) {
+      mergeFields.FNAME = firstName;
+    }
+    if (lastName) {
+      mergeFields.LNAME = lastName;
+    }
+
     const response = await mailchimp.lists.addListMember(
       process.env.MAILCHIMP_AUDIENCE_ID!,
       {
         email_address: email,
         status: 'subscribed',
         tags: isPurdue ? ['Purdue Student', 'Priority Access'] : ['General'],
-        merge_fields: {
-          SOURCE: 'Repple Waitlist',
-        },
+        merge_fields: mergeFields,
       }
     );
     return { success: true, data: response };

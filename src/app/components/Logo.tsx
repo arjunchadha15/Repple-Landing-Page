@@ -3,7 +3,7 @@
 export default function Logo() {
   return (
     <div className="flex justify-center mb-8">
-      <div className="relative w-48 h-48 md:w-64 md:h-64">
+      <div className="relative w-48 h-48 md:w-64 md:h-64"> 
         <video
           autoPlay
           loop
