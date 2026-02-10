@@ -192,18 +192,18 @@ export default function AboutSection() {
         <div className="py-12 px-4 space-y-16">
           {cards.map((card, index) => (
             <div key={`mobile-${index}`} className="max-w-md mx-auto space-y-6">
-              {/* Top text */}
+              {/* Phone mockup - at top */}
+              <div className="flex justify-center transform scale-75">
+                <PhoneMockup screenshot={card.screenshot} />
+              </div>
+
+              {/* First text */}
               <div className="text-center">
                 <h3 className="text-xl font-bold mb-2 watery-gradient-text">{card.left.title}</h3>
                 <p className="text-gray-600 text-sm leading-relaxed">{card.left.description}</p>
               </div>
 
-              {/* Phone mockup - smaller */}
-              <div className="flex justify-center transform scale-75">
-                <PhoneMockup screenshot={card.screenshot} />
-              </div>
-
-              {/* Bottom text */}
+              {/* Second text */}
               <div className="text-center">
                 <h3 className="text-xl font-bold mb-2 watery-gradient-text">{card.right.title}</h3>
                 <p className="text-gray-600 text-sm leading-relaxed">{card.right.description}</p>
