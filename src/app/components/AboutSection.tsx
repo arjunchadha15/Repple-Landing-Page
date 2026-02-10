@@ -139,7 +139,7 @@ export default function AboutSection() {
   }, [activeIndex, scrollToIndex, isMobile]);
 
   return (
-    <div className="about-section-wrapper">
+    <div className={isMobile ? '' : 'about-section-wrapper'}>
       {/* Scroll dots indicator - only show on desktop */}
       {!isMobile && (
         <div className="fixed right-4 md:right-8 top-1/2 -translate-y-1/2 z-40 flex flex-col gap-3">
