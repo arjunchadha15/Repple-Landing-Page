@@ -28,7 +28,9 @@ export default function PrivacyPage() {
           Privacy Policy
         </h1>
         <p className="text-gray-400 text-sm">
-          Effective Date: February 21, 2026 &nbsp;·&nbsp; Last Updated: February 21, 2026
+          Effective Date: February 21, 2026
+          <span className="mx-2">·</span>
+          Last Updated: February 21, 2026
         </p>
       </div>
 
@@ -592,7 +594,7 @@ export default function PrivacyPage() {
           </p>
           <p className="mt-3 text-sm">
             <span className="font-medium text-gray-700">Repple</span><br />
-            reppleapp.com
+            apprepple@gmail.com
           </p>
         </section>
 
