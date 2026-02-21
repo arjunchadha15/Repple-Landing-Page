@@ -81,6 +81,9 @@ export default function Home() {
         <Link href="/privacy" className="hover:text-gray-600 transition-colors">
           Privacy Policy
         </Link>
+        <Link href="/terms" className="hover:text-gray-600 transition-colors">
+          Terms of Service
+        </Link>
       </footer>
     </main>
   );
