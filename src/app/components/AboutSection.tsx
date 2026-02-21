@@ -6,6 +6,7 @@ import PhoneMockup from './PhoneMockup';
 const cards = [
   {
     screenshot: '/screenshot-home.png',
+    alt: 'Repple app home screen showing grind score and workout streak tracker',
     left: {
       title: 'Your Grind Score',
       description: 'Every rep, every run, every session earns points. Watch your score climb throughout the week.',
@@ -17,6 +18,7 @@ const cards = [
   },
   {
     screenshot: '/screenshot-matchups.png',
+    alt: 'Repple app weekly matchups screen showing head-to-head gym competition and ELO rankings',
     left: {
       title: 'Weekly matchups',
       description: 'Your team vs. theirs. Every workout fuels the score.',
@@ -28,6 +30,7 @@ const cards = [
   },
   {
     screenshot: '/screenshot-profile.png',
+    alt: 'Repple app profile screen showing fitness analytics, workout calendar, and custom avatar',
     left: {
       title: 'Your fitness identity',
       description: 'Custom avatars, analytics, and a calendar that shows you\'re consistent.',
@@ -173,7 +176,7 @@ export default function AboutSection() {
                   </div>
 
                   <div className={`flex justify-center about-phone-enter ${index === activeIndex ? 'about-phone-active' : ''}`}>
-                    <PhoneMockup screenshot={card.screenshot} />
+                    <PhoneMockup screenshot={card.screenshot} alt={card.alt} />
                   </div>
 
                   <div className={`text-left about-text-enter ${index === activeIndex ? 'about-text-active' : ''}`} style={{ transitionDelay: '0.15s' }}>
@@ -190,11 +193,12 @@ export default function AboutSection() {
       {/* Mobile: Simple scrollable layout with 3 cards */}
       {isMobile && (
         <div className="py-12 px-4 space-y-16">
+          <h2 className="sr-only">How Repple Works</h2>
           {cards.map((card, index) => (
             <div key={`mobile-${index}`} className="max-w-md mx-auto space-y-6">
               {/* Phone mockup - at top */}
               <div className="flex justify-center transform scale-75">
-                <PhoneMockup screenshot={card.screenshot} />
+                <PhoneMockup screenshot={card.screenshot} alt={card.alt} />
               </div>
 
               {/* First text */}

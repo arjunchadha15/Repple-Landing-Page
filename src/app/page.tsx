@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import Link from 'next/link';
 import Hero from './components/Hero';
 import AboutSection from './components/AboutSection';
 
@@ -72,6 +73,12 @@ export default function Home() {
       <div id="about-section">
         <AboutSection />
       </div>
+
+      <footer className="text-center py-6 text-sm text-gray-400">
+        <Link href="/faq" className="hover:text-gray-600 transition-colors">
+          FAQ
+        </Link>
+      </footer>
     </main>
   );
 }
