@@ -6,42 +6,12 @@ import './globals.css';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://reppleapp.com'),
   title: 'Repple - Turn the Gym Into a Game',
   description: 'Track your workouts, compete with friends, and level up your fitness journey. Join the waitlist for early access.',
-  keywords: 'fitness, workout, gym, tracking, gamification, repple, gym game, workout app, fitness gamification, compete workout, gym competition',
+  keywords: 'fitness, workout, gym, tracking, gamification, repple',
   authors: [{ name: 'Repple' }],
   viewport: 'width=device-width, initial-scale=1',
   themeColor: '#7F3DFF',
-  icons: {
-    icon: '/Repple_Monkey_Vector.png',
-    shortcut: '/Repple_Monkey_Vector.png',
-    apple: '/Repple_Monkey_Vector.png',
-  },
-  alternates: {
-    canonical: 'https://reppleapp.com',
-  },
-  openGraph: {
-    title: 'Repple - Turn the Gym Into a Game',
-    description: 'Track your workouts, compete with friends, and level up your fitness journey. Join the waitlist for early access.',
-    url: 'https://reppleapp.com',
-    siteName: 'Repple',
-    images: [
-      {
-        url: '/og-image.png',
-        width: 1200,
-        height: 630,
-        alt: 'Repple - Turn the Gym Into a Game',
-      },
-    ],
-    type: 'website',
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Repple - Turn the Gym Into a Game',
-    description: 'Track your workouts, compete with friends, and level up your fitness journey. Join the waitlist for early access.',
-    images: ['/og-image.png'],
-  },
 };
 
 const jsonLd = {
