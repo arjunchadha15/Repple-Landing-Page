@@ -1,8 +1,12 @@
 # 🎮 Repple Landing Page
 
-A beautiful, modern landing page for Repple - Turn the Gym Into a Game.
+**Repple turns the gym into a game.** It's a gamified fitness iOS app for college students with workout logging, competitive matchups, and seasonal leaderboards. It grew to 1,000+ users and 500,000+ social media views in its first month.
+
+This repo is Repple's website: the landing page, the email waitlist, and the invite and join pages that deep-link friends into the app.
 
 Built with Next.js 14, TypeScript, and Tailwind CSS.
+
+**Related:** [Repple AI Workout Planner](https://github.com/arjunchadha15/Workout-Planner), the backend that generates each user's training plan.
 
 ## ✨ Features
 
